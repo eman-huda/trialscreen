@@ -1,0 +1,29 @@
+{
+ "train": {
+  "n": 602,
+  "total_max": 610,
+  "total_mean": 314.8,
+  "prompt_max": 584,
+  "target_max": 38,
+  "target_mean": 14.8,
+  "truncated": 0
+ },
+ "validation": {
+  "n": 206,
+  "total_max": 444,
+  "total_mean": 327.5,
+  "prompt_max": 422,
+  "target_max": 25,
+  "target_mean": 14.3,
+  "truncated": 0
+ },
+ "test": {
+  "n": 206,
+  "total_max": 504,
+  "total_mean": 297.7,
+  "prompt_max": 488,
+  "target_max": 28,
+  "target_mean": 14.3,
+  "truncated": 0
+ }
+}

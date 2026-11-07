@@ -1,0 +1,108 @@
+{
+ "env": {
+  "python": "3.12.3",
+  "torch": "2.15.0+cpu",
+  "transformers": "5.22.2",
+  "cuda": false
+ },
+ "target": "/tmp/tiny-qwen",
+ "target_adapter": null,
+ "draft": "/tmp/tiny-draft",
+ "draft_adapter": "none",
+ "vocab_equal": true,
+ "dtype": "torch.float32",
+ "workloads": {
+  "screening": {
+   "n_prompts": 3,
+   "greedy": {
+    "total_s": 0.6003616039999997,
+    "new_tokens": 144,
+    "peak_mem_mb": null,
+    "tokens_per_s": 239.85544551913094
+   },
+   "speculative": {
+    "2": {
+     "equal": 3,
+     "mismatches": [],
+     "drafted": 279,
+     "accepted": 0,
+     "rounds": 141,
+     "total_s": 1.4528351579999708,
+     "new_tokens": 144,
+     "peak_mem_mb": 0,
+     "target_forwards": 144,
+     "draft_forwards": 282,
+     "acceptance_rate": 0.0,
+     "tokens_per_round": 1.0212765957446808,
+     "tokens_per_s": 99.11654409453857,
+     "speedup_vs_greedy": 0.4132344958023185,
+     "token_equal_rate": 1.0
+    },
+    "4": {
+     "equal": 3,
+     "mismatches": [],
+     "drafted": 546,
+     "accepted": 0,
+     "rounds": 141,
+     "total_s": 2.028350060999969,
+     "new_tokens": 144,
+     "peak_mem_mb": 0,
+     "target_forwards": 144,
+     "draft_forwards": 549,
+     "acceptance_rate": 0.0,
+     "tokens_per_round": 1.0212765957446808,
+     "tokens_per_s": 70.9936626663982,
+     "speedup_vs_greedy": 0.2959852027238452,
+     "token_equal_rate": 1.0
+    }
+   },
+   "hf_assisted_reference_equal_first_prompt": true
+  },
+  "summary": {
+   "n_prompts": 1,
+   "greedy": {
+    "total_s": 0.07453514999997424,
+    "new_tokens": 32,
+    "peak_mem_mb": null,
+    "tokens_per_s": 429.3276393756645
+   },
+   "speculative": {
+    "2": {
+     "equal": 1,
+     "mismatches": [],
+     "drafted": 61,
+     "accepted": 0,
+     "rounds": 31,
+     "total_s": 0.20508030099995267,
+     "new_tokens": 32,
+     "peak_mem_mb": 0,
+     "target_forwards": 32,
+     "draft_forwards": 62,
+     "acceptance_rate": 0.0,
+     "tokens_per_round": 1.032258064516129,
+     "tokens_per_s": 156.0364395993713,
+     "speedup_vs_greedy": 0.3634437322187831,
+     "token_equal_rate": 1.0
+    },
+    "4": {
+     "equal": 1,
+     "mismatches": [],
+     "drafted": 118,
+     "accepted": 0,
+     "rounds": 31,
+     "total_s": 0.302032911000083,
+     "new_tokens": 32,
+     "peak_mem_mb": 0,
+     "target_forwards": 32,
+     "draft_forwards": 119,
+     "acceptance_rate": 0.0,
+     "tokens_per_round": 1.032258064516129,
+     "tokens_per_s": 105.94871894603303,
+     "speedup_vs_greedy": 0.24677823934211512,
+     "token_equal_rate": 1.0
+    }
+   },
+   "hf_assisted_reference_equal_first_prompt": true
+  }
+ }
+}

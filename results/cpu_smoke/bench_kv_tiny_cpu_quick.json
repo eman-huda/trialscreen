@@ -1,0 +1,281 @@
+{
+ "env": {
+  "python": "3.12.3",
+  "torch": "2.15.0+cpu",
+  "transformers": "5.22.2",
+  "cuda": false
+ },
+ "model": "/tmp/tiny-qwen",
+ "adapter": null,
+ "dtype": "torch.float32",
+ "decoding": "greedy, EOS ignored",
+ "repeats": 1,
+ "warmup": 1,
+ "kv_bytes_per_token_theory": 256,
+ "results": [
+  {
+   "input_tokens": 32,
+   "output_tokens": 8,
+   "modes": {
+    "hf_nocache": {
+     "prefill_s": 0.007317987000078574,
+     "decode_s": 0.08488595699998314,
+     "total_s": 0.09220394400006171,
+     "tokens_per_s": 86.76418440402773,
+     "decode_tokens_per_s": 82.46358110801991,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_nocache": {
+     "prefill_s": 0.01265770899999552,
+     "decode_s": 0.06466986500004168,
+     "total_s": 0.0773275740000372,
+     "tokens_per_s": 103.45598065699244,
+     "decode_tokens_per_s": 108.24206916150959,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_cache": {
+     "prefill_s": 0.005451218999951379,
+     "decode_s": 0.013251598000010745,
+     "total_s": 0.018702816999962124,
+     "tokens_per_s": 427.7430506867602,
+     "decode_tokens_per_s": 528.2381792742524,
+     "peak_mem_mb": null,
+     "cache_mb": 0.009521484375,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_cache_refattn": {
+     "prefill_s": 0.0056102620000046954,
+     "decode_s": 0.013915139999994608,
+     "total_s": 0.019525401999999303,
+     "tokens_per_s": 409.7226781809811,
+     "decode_tokens_per_s": 503.049196774356,
+     "peak_mem_mb": null,
+     "cache_mb": 0.009521484375,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "hf_cache": {
+     "prefill_s": 0.005608906000020397,
+     "decode_s": 0.014035755000008976,
+     "total_s": 0.019644661000029373,
+     "tokens_per_s": 407.23532974114636,
+     "decode_tokens_per_s": 498.7262886816935,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    }
+   }
+  },
+  {
+   "input_tokens": 32,
+   "output_tokens": 16,
+   "modes": {
+    "hf_nocache": {
+     "prefill_s": 0.012575818999948751,
+     "decode_s": 0.20483556700003192,
+     "total_s": 0.21741138599998067,
+     "tokens_per_s": 73.59320178383584,
+     "decode_tokens_per_s": 73.22946995820146,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_nocache": {
+     "prefill_s": 0.013488909999978205,
+     "decode_s": 0.13026361799995811,
+     "total_s": 0.14375252799993632,
+     "tokens_per_s": 111.30239045261929,
+     "decode_tokens_per_s": 115.15110842387952,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_cache": {
+     "prefill_s": 0.0054928939999854265,
+     "decode_s": 0.027969528999960858,
+     "total_s": 0.033462422999946284,
+     "tokens_per_s": 478.1482799385354,
+     "decode_tokens_per_s": 536.2979119176798,
+     "peak_mem_mb": null,
+     "cache_mb": 0.011474609375,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_cache_refattn": {
+     "prefill_s": 0.00561342200001036,
+     "decode_s": 0.02960321299997304,
+     "total_s": 0.0352166349999834,
+     "tokens_per_s": 454.3307445474999,
+     "decode_tokens_per_s": 506.70175565110657,
+     "peak_mem_mb": null,
+     "cache_mb": 0.011474609375,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "hf_cache": {
+     "prefill_s": 0.005777425000019321,
+     "decode_s": 0.03093212199996742,
+     "total_s": 0.03670954699998674,
+     "tokens_per_s": 435.8539210523567,
+     "decode_tokens_per_s": 484.932782820907,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    }
+   }
+  },
+  {
+   "input_tokens": 64,
+   "output_tokens": 8,
+   "modes": {
+    "hf_nocache": {
+     "prefill_s": 0.022042528000042694,
+     "decode_s": 0.17682645099989713,
+     "total_s": 0.19886897899993983,
+     "tokens_per_s": 40.22749068371503,
+     "decode_tokens_per_s": 39.586837604991985,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_nocache": {
+     "prefill_s": 0.02301887299995542,
+     "decode_s": 0.18032055200001196,
+     "total_s": 0.20333942499996738,
+     "tokens_per_s": 39.34308361500129,
+     "decode_tokens_per_s": 38.81975694040431,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_cache": {
+     "prefill_s": 0.021187446999988424,
+     "decode_s": 0.017618621999986317,
+     "total_s": 0.03880606899997474,
+     "tokens_per_s": 206.15332101803992,
+     "decode_tokens_per_s": 397.3068949436248,
+     "peak_mem_mb": null,
+     "cache_mb": 0.017333984375,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_cache_refattn": {
+     "prefill_s": 0.021761546999982784,
+     "decode_s": 0.01979657499998666,
+     "total_s": 0.041558121999969444,
+     "tokens_per_s": 192.50148021621098,
+     "decode_tokens_per_s": 353.5965185899438,
+     "peak_mem_mb": null,
+     "cache_mb": 0.017333984375,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "hf_cache": {
+     "prefill_s": 0.02218399900004897,
+     "decode_s": 0.02140362499994808,
+     "total_s": 0.04358762399999705,
+     "tokens_per_s": 183.53833647827514,
+     "decode_tokens_per_s": 327.0474043540279,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    }
+   }
+  },
+  {
+   "input_tokens": 64,
+   "output_tokens": 16,
+   "modes": {
+    "hf_nocache": {
+     "prefill_s": 0.02384031100007178,
+     "decode_s": 0.41284213199992337,
+     "total_s": 0.43668244299999515,
+     "tokens_per_s": 36.63989761090573,
+     "decode_tokens_per_s": 36.333500961580114,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_nocache": {
+     "prefill_s": 0.023022617000037826,
+     "decode_s": 0.41483446099994126,
+     "total_s": 0.4378570779999791,
+     "tokens_per_s": 36.5416041076325,
+     "decode_tokens_per_s": 36.15900174696944,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_cache": {
+     "prefill_s": 0.02272177500003636,
+     "decode_s": 0.03686474999994971,
+     "total_s": 0.05958652499998607,
+     "tokens_per_s": 268.5170850289347,
+     "decode_tokens_per_s": 406.8927634127578,
+     "peak_mem_mb": null,
+     "cache_mb": 0.019287109375,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "explicit_cache_refattn": {
+     "prefill_s": 0.021946311000078822,
+     "decode_s": 0.03566101100000196,
+     "total_s": 0.057607322000080785,
+     "tokens_per_s": 277.74247169444124,
+     "decode_tokens_per_s": 420.6274465970461,
+     "peak_mem_mb": null,
+     "cache_mb": 0.019287109375,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    },
+    "hf_cache": {
+     "prefill_s": 0.022241731999997683,
+     "decode_s": 0.039285696000092685,
+     "total_s": 0.06152742800009037,
+     "tokens_per_s": 260.04662505925813,
+     "decode_tokens_per_s": 381.818359536372,
+     "peak_mem_mb": null,
+     "cache_mb": null,
+     "tokens_equal_reference": true,
+     "first_mismatch": null,
+     "mismatch_margin": null
+    }
+   }
+  }
+ ]
+}

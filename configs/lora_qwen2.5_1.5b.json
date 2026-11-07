@@ -1,0 +1,19 @@
+{
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "seed": 42,
+  "max_len": 1536,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": ["q_proj", "k_proj", "v_proj", "o_proj", "gate_proj", "up_proj", "down_proj"],
+  "lr": 2e-4,
+  "weight_decay": 0.0,
+  "warmup_ratio": 0.05,
+  "epochs": 3,
+  "batch_size": 4,
+  "grad_accum": 4,
+  "max_grad_norm": 1.0,
+  "gradient_checkpointing": true,
+  "log_every": 5,
+  "select_metric": "val_macro_f1"
+}

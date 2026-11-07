@@ -1,0 +1,197 @@
+{
+ "dataset": "ncbi/TrialGPT-Criterion-Annotations",
+ "parquet_sha256": "14c547184fac9b013cd17441fd028845b40150c76b022e58334f5494077e5234",
+ "seed": 42,
+ "procedure": "sorted unique patient_id -> numpy.random.default_rng(42).shuffle -> first 37 train, next 8 validation, last 8 test",
+ "dropped_columns": [
+  "gpt4_explanation",
+  "gpt4_sentences",
+  "gpt4_eligibility",
+  "explanation_correctness"
+ ],
+ "excluded_annotations": {
+  "ids": [
+   883
+  ],
+  "reason": "criterion_text missing (NaN) in the released parquet; cannot form an input. The patient stays in its split; only this annotation is unusable."
+ },
+ "splits": {
+  "train": {
+   "patient_ids": [
+    "sigir-20148",
+    "sigir-201416",
+    "sigir-201517",
+    "sigir-201519",
+    "sigir-20159",
+    "sigir-201425",
+    "sigir-201414",
+    "sigir-20157",
+    "sigir-201514",
+    "sigir-20144",
+    "sigir-20152",
+    "sigir-20151",
+    "sigir-201429",
+    "sigir-201426",
+    "sigir-20145",
+    "sigir-201518",
+    "sigir-20154",
+    "sigir-201521",
+    "sigir-201413",
+    "sigir-20146",
+    "sigir-201511",
+    "sigir-20147",
+    "sigir-20155",
+    "sigir-201418",
+    "sigir-20156",
+    "sigir-20143",
+    "sigir-20149",
+    "sigir-201523",
+    "sigir-201424",
+    "sigir-201524",
+    "sigir-201512",
+    "sigir-201423",
+    "sigir-201412",
+    "sigir-201510",
+    "sigir-201419",
+    "sigir-201520",
+    "sigir-20153"
+   ],
+   "n_patients": 37,
+   "n_annotations_raw": 603,
+   "n_annotations": 602,
+   "annotations_per_patient": {
+    "sigir-201412": 9,
+    "sigir-201413": 12,
+    "sigir-201414": 14,
+    "sigir-201416": 30,
+    "sigir-201418": 12,
+    "sigir-201419": 25,
+    "sigir-201423": 23,
+    "sigir-201424": 6,
+    "sigir-201425": 21,
+    "sigir-201426": 18,
+    "sigir-201429": 22,
+    "sigir-20143": 6,
+    "sigir-20144": 43,
+    "sigir-20145": 11,
+    "sigir-20146": 22,
+    "sigir-20147": 17,
+    "sigir-20148": 12,
+    "sigir-20149": 5,
+    "sigir-20151": 29,
+    "sigir-201510": 15,
+    "sigir-201511": 11,
+    "sigir-201512": 9,
+    "sigir-201514": 15,
+    "sigir-201517": 15,
+    "sigir-201518": 10,
+    "sigir-201519": 7,
+    "sigir-20152": 20,
+    "sigir-201520": 21,
+    "sigir-201521": 21,
+    "sigir-201523": 25,
+    "sigir-201524": 32,
+    "sigir-20153": 16,
+    "sigir-20154": 11,
+    "sigir-20155": 5,
+    "sigir-20156": 9,
+    "sigir-20157": 18,
+    "sigir-20159": 6
+   },
+   "label_counts": {
+    "inclusion": {
+     "not enough information": 109,
+     "included": 88,
+     "not included": 13,
+     "not applicable": 5
+    },
+    "exclusion": {
+     "not excluded": 292,
+     "not enough information": 65,
+     "not applicable": 23,
+     "excluded": 8
+    }
+   },
+   "empty_evidence": 349
+  },
+  "validation": {
+   "patient_ids": [
+    "sigir-201415",
+    "sigir-20142",
+    "sigir-201430",
+    "sigir-201427",
+    "sigir-201515",
+    "sigir-20141",
+    "sigir-201420",
+    "sigir-201522"
+   ],
+   "n_patients": 8,
+   "n_annotations_raw": 206,
+   "n_annotations": 206,
+   "annotations_per_patient": {
+    "sigir-20141": 31,
+    "sigir-201415": 39,
+    "sigir-20142": 12,
+    "sigir-201420": 17,
+    "sigir-201427": 20,
+    "sigir-201430": 29,
+    "sigir-201515": 29,
+    "sigir-201522": 29
+   },
+   "label_counts": {
+    "inclusion": {
+     "included": 35,
+     "not enough information": 27,
+     "not included": 3,
+     "not applicable": 1
+    },
+    "exclusion": {
+     "not excluded": 101,
+     "not enough information": 26,
+     "not applicable": 11,
+     "excluded": 2
+    }
+   },
+   "empty_evidence": 116
+  },
+  "test": {
+   "patient_ids": [
+    "sigir-201422",
+    "sigir-20158",
+    "sigir-201411",
+    "sigir-201516",
+    "sigir-201513",
+    "sigir-201410",
+    "sigir-201421",
+    "sigir-201417"
+   ],
+   "n_patients": 8,
+   "n_annotations_raw": 206,
+   "n_annotations": 206,
+   "annotations_per_patient": {
+    "sigir-201410": 26,
+    "sigir-201411": 15,
+    "sigir-201417": 23,
+    "sigir-201421": 34,
+    "sigir-201422": 16,
+    "sigir-201513": 42,
+    "sigir-201516": 28,
+    "sigir-20158": 22
+   },
+   "label_counts": {
+    "inclusion": {
+     "not enough information": 38,
+     "included": 27,
+     "not included": 7,
+     "not applicable": 3
+    },
+    "exclusion": {
+     "not excluded": 91,
+     "not enough information": 28,
+     "not applicable": 12
+    }
+   },
+   "empty_evidence": 145
+  }
+ }
+}

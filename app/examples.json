@@ -1,0 +1,522 @@
+[
+ {
+  "name": "Validation patient sigir-201415 / NCT00180739 (31 criteria)",
+  "patient_id": "sigir-201415",
+  "trial_id": "NCT00180739",
+  "note": "0. A 36-year-old woman presents to the emergency department with 12 weeks of amenorrhea, vaginal spotting that has increased since yesterday, lower abdominal tenderness, nausea and vomiting.\n1. The physical exam reveals overall tender abdomen, 18-week sized uterus, and cervical dilation of 2 cm.\n2. The complete blood count and biochemical profile are normal.\n3. Point of care pregnancy test with cut-off sensitivity of 25 mIU/ml Beta-HCG is negative.\n4. The ultrasound reports enlarged uterus (12 cm x 9 cm x 7 cms) with multiple cystic areas in the interior.\n5. The differential diagnosis includes vesicular mole vs fibroid degeneration.\n6. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "criteria": "Inclusion criteria:\n- 1. Subject with uterine fibroids, who desire pregnancy within 12 months and has the one of the following criteria: Women 20-40 age. Women age < 46 years old who plan to have egg donation. Women above 38 should test for normal ovarian function as judged by endocrinological evaluation. If the couple has failed to conceive for more that 1 year, the woman should test for normal ovarian function as judged by endocrinological evaluation, and the male must have adequate sperm test. Women undergoing fertility treatment or plan to have sperm donation.\n- 2. Use or non use of non-steroidal treatments for excessive vaginal bleeding such as antifibrinolytic agents (e.g. Tranexamic acid) or non-steroidal anti-inflammatory drugs (e.g. Mefanamic Acid) has been maintained for the three months prior to the planned date of the study procedure and the patient has agreed to maintain this use or non-use through the 6-month follow-up period.\n- 3. Clinically normal PAP smear within timing of National Guidelines in the country of the clinical site.\n- 4. Able and willing to give consent and able to attend all study visits\n- 5. Able to communicate sensations during the MRgFUS procedure\n- 6. Having uterine fibroids that are device accessible (i.e., positioned in the uterus such that they can be accessed without being shielded by bowel or bone).\n- 7. Tumor(s) are clearly visible on non-contrast MRI.\n- 8. Largest fibroid 8 cm in diameter or 12 cm if receiving GnRH\n\nExclusion criteria:\n- 1. Patient is pregnant as confirmed by pregnancy test at time of screening\n- 2. Uterine size >20 weeks as evaluated by US or MR.\n- 3. Patients who are considered high risk pregnancy due to uterine factors (e.g. abnormal uterus, uterine scars, cerclage) except fibroids.\n- 4. Patients with fibroid that is more than 50% sub-mucosal or with hysteroscopically resectable\n- 5. Patients with adenomyosis\n- 6. Patient is on dialysis\n- 7. Hematocrit is < 25\n- 8. Patient has hemolytic anemia\n- 9. Patient has unstable cardiac status including: \u00a7 Unstable angina pectoris on medication\u00a7 Documented myocardial infarction within 6 months of protocol entry\u00a7 Congestive heart failure requiring medication (other than diuretic)\u00a7 Currently taking anti-arrhythmic drugs\u00a7 Severe hypertension (diastolic BP>100 on medication)\u00a7 Presence of cardiac pacemaker\n- 10. Patient has an ASA score of >2\n- 11. Patient has severe cerebrovascular disease (multiple CVA or CVA within 6 months)\n- 12. Patient is on anti-coagulation therapy or has an underlying bleeding disorder\n- 13. Evidence of uterine pathology other than leiomyoma\n- 14. Patient has an active pelvic infection or history of pelvic inflammatory disease\n- 15. Patient has an undiagnosed pelvic mass outside the uterus.\n- 16. Patient weight >110 kg\n- 17. Subject with extensive abdominal scarring in an area of the abdomen directly anterior to the treatment area.\n- 18. Subject with standard contraindications for MR imaging such as non-MRI compatable implanted metallic devices.\n- 19. Known intolerance to the MRI contrast agent (e.g. Gadolinium or Magnevist).\n- 20. Individuals who are not able or willing to tolerate the required prolonged stationary prone position during treatment (approximately 3 hours.)\n- 21. Patient with an intrauterine contraceptive device anywhere in the treatment beam path.\n- 22. Women who are breast feeding.\n- 23. Five or more fibroids, bigger then 3cm diameter, each",
+  "gold": [
+   {
+    "type": "inclusion",
+    "criterion": "1. Subject with uterine fibroids, who desire pregnancy within 12 months and has the one of the following criteria: Women 20-40 age. Women age < 46 years old who plan to have egg donation. Women above 38 should test for normal ovarian function as judged by endocrinological evaluation. If the couple has failed to conceive for more that 1 year, the woman should test for normal ovarian function as judged by endocrinological evaluation, and the male must have adequate sperm test. Women undergoing fertility treatment or plan to have sperm donation.",
+    "label": "not enough information",
+    "evidence": [
+     0,
+     3,
+     5
+    ]
+   },
+   {
+    "type": "inclusion",
+    "criterion": "2. Use or non use of non-steroidal treatments for excessive vaginal bleeding such as antifibrinolytic agents (e.g. Tranexamic acid) or non-steroidal anti-inflammatory drugs (e.g. Mefanamic Acid) has been maintained for the three months prior to the planned date of the study procedure and the patient has agreed to maintain this use or non-use through the 6-month follow-up period.",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "inclusion",
+    "criterion": "3. Clinically normal PAP smear within timing of National Guidelines in the country of the clinical site.",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "inclusion",
+    "criterion": "4. Able and willing to give consent and able to attend all study visits",
+    "label": "included",
+    "evidence": [
+     6
+    ]
+   },
+   {
+    "type": "inclusion",
+    "criterion": "5. Able to communicate sensations during the MRgFUS procedure",
+    "label": "not enough information",
+    "evidence": [
+     6
+    ]
+   },
+   {
+    "type": "inclusion",
+    "criterion": "6. Having uterine fibroids that are device accessible (i.e., positioned in the uterus such that they can be accessed without being shielded by bowel or bone).",
+    "label": "not enough information",
+    "evidence": [
+     4
+    ]
+   },
+   {
+    "type": "inclusion",
+    "criterion": "7. Tumor(s) are clearly visible on non-contrast MRI.",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "inclusion",
+    "criterion": "8. Largest fibroid 8 cm in diameter or 12 cm if receiving GnRH",
+    "label": "not enough information",
+    "evidence": [
+     4
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "1. Patient is pregnant as confirmed by pregnancy test at time of screening",
+    "label": "not excluded",
+    "evidence": [
+     3
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "2. Uterine size >20 weeks as evaluated by US or MR.",
+    "label": "not excluded",
+    "evidence": [
+     1
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "3. Patients who are considered high risk pregnancy due to uterine factors (e.g. abnormal uterus, uterine scars, cerclage) except fibroids.",
+    "label": "not enough information",
+    "evidence": [
+     4
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "4. Patients with fibroid that is more than 50% sub-mucosal or with hysteroscopically resectable",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "5. Patients with adenomyosis",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "6. Patient is on dialysis",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "7. Hematocrit is < 25",
+    "label": "not excluded",
+    "evidence": [
+     2
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "8. Patient has hemolytic anemia",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "9. Patient has unstable cardiac status including: \u00a7 Unstable angina pectoris on medication\u00a7 Documented myocardial infarction within 6 months of protocol entry\u00a7 Congestive heart failure requiring medication (other than diuretic)\u00a7 Currently taking anti-arrhythmic drugs\u00a7 Severe hypertension (diastolic BP>100 on medication)\u00a7 Presence of cardiac pacemaker",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "10. Patient has an ASA score of >2",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "11. Patient has severe cerebrovascular disease (multiple CVA or CVA within 6 months)",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "12. Patient is on anti-coagulation therapy or has an underlying bleeding disorder",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "13. Evidence of uterine pathology other than leiomyoma",
+    "label": "excluded",
+    "evidence": [
+     5
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "14. Patient has an active pelvic infection or history of pelvic inflammatory disease",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "15. Patient has an undiagnosed pelvic mass outside the uterus.",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "16. Patient weight >110 kg",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "17. Subject with extensive abdominal scarring in an area of the abdomen directly anterior to the treatment area.",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "18. Subject with standard contraindications for MR imaging such as non-MRI compatable implanted metallic devices.",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "19. Known intolerance to the MRI contrast agent (e.g. Gadolinium or Magnevist).",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "20. Individuals who are not able or willing to tolerate the required prolonged stationary prone position during treatment (approximately 3 hours.)",
+    "label": "not excluded",
+    "evidence": [
+     6
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "21. Patient with an intrauterine contraceptive device anywhere in the treatment beam path.",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "22. Women who are breast feeding.",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "23. Five or more fibroids, bigger then 3cm diameter, each",
+    "label": "not enough information",
+    "evidence": []
+   }
+  ]
+ },
+ {
+  "name": "Validation patient sigir-20141 / NCT01397994 (21 criteria)",
+  "patient_id": "sigir-20141",
+  "trial_id": "NCT01397994",
+  "note": "0. A 58-year-old African-American woman presents to the ER with episodic pressing/burning anterior chest pain that began two days earlier for the first time in her life.\n1. The pain started while she was walking, radiates to the back, and is accompanied by nausea, diaphoresis and mild dyspnea, but is not increased on inspiration.\n2. The latest episode of pain ended half an hour prior to her arrival.\n3. She is known to have hypertension and obesity.\n4. She denies smoking, diabetes, hypercholesterolemia, or a family history of heart disease.\n5. She currently takes no medications.\n6. Physical examination is normal.\n7. The EKG shows nonspecific changes.\n8. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "criteria": "Inclusion criteria:\n- Patients of chronic stable angina with abnormal Exercise Myocardial Perfusion Spect Scan with reversible and partially reversible ischemic changes.\n- Male and female\n- Age 25 to 65 years\n- Patient must understand and be willing, able and likely to comply with all study procedures and restrictions and comprehends the diary cards.\n- Patient must be able to give voluntary written informed consent.\n\nExclusion criteria:\n- Hypertension of > 170/100 mm of Hg\n- Valvular heart disease and cardiomyopathy\n- Myocardial infarction in < 6 months\n- Unstable angina\n- Congestive cardiac failure\n- Severe anemia (Hb 7G/dl)\n- Cardiac arrhythmias or II or III degree AV block\n- Significant liver or renal dysfunction\n- IDDM (Type-1 diabetes mellitus)\n- Systolic blood pressure < 100 mm Hg\n- Pregnant and nursing women\n- Known hypersensitivity to nicorandil\n- On calcium channel blockers\n- Patients not eligible for Tc 99m SPECT\n- Patients in whom beta blockers are contraindicated\n- Geographical inaccessibility for treatment or follow-up evaluations",
+  "gold": [
+   {
+    "type": "inclusion",
+    "criterion": "Patients of chronic stable angina with abnormal Exercise Myocardial Perfusion Spect Scan with reversible and partially reversible ischemic changes.",
+    "label": "not enough information",
+    "evidence": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "type": "inclusion",
+    "criterion": "Male and female",
+    "label": "included",
+    "evidence": [
+     0
+    ]
+   },
+   {
+    "type": "inclusion",
+    "criterion": "Age 25 to 65 years",
+    "label": "included",
+    "evidence": [
+     0
+    ]
+   },
+   {
+    "type": "inclusion",
+    "criterion": "Patient must understand and be willing, able and likely to comply with all study procedures and restrictions and comprehends the diary cards.",
+    "label": "included",
+    "evidence": [
+     8
+    ]
+   },
+   {
+    "type": "inclusion",
+    "criterion": "Patient must be able to give voluntary written informed consent.",
+    "label": "included",
+    "evidence": [
+     8
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Hypertension of > 170/100 mm of Hg",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Valvular heart disease and cardiomyopathy",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Myocardial infarction in < 6 months",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Unstable angina",
+    "label": "not enough information",
+    "evidence": [
+     0,
+     1,
+     2
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Congestive cardiac failure",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Severe anemia (Hb 7G/dl)",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Cardiac arrhythmias or II or III degree AV block",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Significant liver or renal dysfunction",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "IDDM (Type-1 diabetes mellitus)",
+    "label": "not excluded",
+    "evidence": [
+     4
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Systolic blood pressure < 100 mm Hg",
+    "label": "not excluded",
+    "evidence": [
+     3
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Pregnant and nursing women",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Known hypersensitivity to nicorandil",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "On calcium channel blockers",
+    "label": "not excluded",
+    "evidence": [
+     5
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Patients not eligible for Tc 99m SPECT",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Patients in whom beta blockers are contraindicated",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Geographical inaccessibility for treatment or follow-up evaluations",
+    "label": "not excluded",
+    "evidence": [
+     8
+    ]
+   }
+  ]
+ },
+ {
+  "name": "Validation patient sigir-201515 / NCT01550588 (18 criteria)",
+  "patient_id": "sigir-201515",
+  "trial_id": "NCT01550588",
+  "note": "0. Karen is a 72-year-old woman with hypertension and type 2 diabetes, who was hospitalized for cryptogenic stroke two weeks ago.\n1. At the time, computed tomography was negative for brain hemorrhage and she was given thrombolytic therapy with resolution of her symptoms.\n2. Transesophageal echocardiogram and magnetic resonance angiogram of brain and great vessels found no evidence of abnormalities.\n3. She presents currently with a blood pressure of 120/70 mm Hg, normal glucose, and normal sinus rhythm on a 12-lead electrocardiogram.\n4. She reports history of occasional palpitations, shortness of breath and chest pain lasting for a few minutes and then stopping on their own.\n5. The patient will provide informed consent, and will comply with the trial protocol without any practical issues.",
+  "criteria": "Inclusion criteria:\n- Subjects who have had a cryptogenic stroke within the previous 3 months, radiologically verified\n- Subjects who have been diagnosed with a high-risk* Patent Foramen Ovale (PFO), echocardiographically verified (*PFO size \u2265 2 mm or atrial septal aneurysm or hypermobility by TEE)\n- Subjects willing to participate in follow-up visits\n- Absence of other potential causes of stroke\n\nExclusion criteria:\n- Any identifiable cause of thromboembolic cause other than PFO\n- Subjects with intracardiac thrombus or tumor, dilated cardiomyopathy, prosthetic heart valve or mitral stenosis, endocarditis\n- Subjects with significant atherosclerosis or dissection of the aorta, collagen vascular disease, arteritis, vasculitis and coagulopathy\n- Subjects who have an acute or recent (within 6 months) myocardial infarction or unstable angina\n- Subjects who have a non-vascular origin of the neurological symptoms after brain imaging (CT scan or MRI)\n- History of intracranial bleeding, confirmed arterio-venous malformation,aneurysm or uncontrolled coagulopathy\n- Pre-existing neurological disorders or intracranial disease, e.g. multiple sclerosis\n- Subjects with left ventricular aneurysm or akinesis\n- Subjects with atrial fibrillation/atrial flutter (chronic or intermittent)\n- Subjects with another source of right to left shunt identified at baseline, including an atrial septal defect and/or fenestrated septum\n- Subjects who could not undergo the TEE examination\n- Subjects with contraindication to aspirin or Clopidogrel therapy\n- Pregnant or desire to become pregnant within the next year\n- Subjects who have a underlying malignancy",
+  "gold": [
+   {
+    "type": "inclusion",
+    "criterion": "Subjects who have had a cryptogenic stroke within the previous 3 months, radiologically verified",
+    "label": "included",
+    "evidence": [
+     0
+    ]
+   },
+   {
+    "type": "inclusion",
+    "criterion": "Subjects who have been diagnosed with a high-risk* Patent Foramen Ovale (PFO), echocardiographically verified (*PFO size \u2265 2 mm or atrial septal aneurysm or hypermobility by TEE)",
+    "label": "not enough information",
+    "evidence": []
+   },
+   {
+    "type": "inclusion",
+    "criterion": "Subjects willing to participate in follow-up visits",
+    "label": "included",
+    "evidence": [
+     5
+    ]
+   },
+   {
+    "type": "inclusion",
+    "criterion": "Absence of other potential causes of stroke",
+    "label": "not enough information",
+    "evidence": [
+     0
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Any identifiable cause of thromboembolic cause other than PFO",
+    "label": "not excluded",
+    "evidence": [
+     0
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Subjects with intracardiac thrombus or tumor, dilated cardiomyopathy, prosthetic heart valve or mitral stenosis, endocarditis",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Subjects with significant atherosclerosis or dissection of the aorta, collagen vascular disease, arteritis, vasculitis and coagulopathy",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Subjects who have an acute or recent (within 6 months) myocardial infarction or unstable angina",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Subjects who have a non-vascular origin of the neurological symptoms after brain imaging (CT scan or MRI)",
+    "label": "not applicable",
+    "evidence": [
+     0
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "History of intracranial bleeding, confirmed arterio-venous malformation,aneurysm or uncontrolled coagulopathy",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Pre-existing neurological disorders or intracranial disease, e.g. multiple sclerosis",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Subjects with left ventricular aneurysm or akinesis",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Subjects with atrial fibrillation/atrial flutter (chronic or intermittent)",
+    "label": "not excluded",
+    "evidence": [
+     3,
+     4
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Subjects with another source of right to left shunt identified at baseline, including an atrial septal defect and/or fenestrated septum",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Subjects who could not undergo the TEE examination",
+    "label": "not excluded",
+    "evidence": [
+     2
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Subjects with contraindication to aspirin or Clopidogrel therapy",
+    "label": "not excluded",
+    "evidence": []
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Pregnant or desire to become pregnant within the next year",
+    "label": "not excluded",
+    "evidence": [
+     0
+    ]
+   },
+   {
+    "type": "exclusion",
+    "criterion": "Subjects who have a underlying malignancy",
+    "label": "not excluded",
+    "evidence": []
+   }
+  ]
+ },
+ {
+  "name": "Hand-written unseen example (not from the dataset)",
+  "patient_id": null,
+  "trial_id": null,
+  "note": "A 64-year-old man with type 2 diabetes diagnosed 8 years ago presents for routine follow-up. His HbA1c last month was 8.9%. He takes metformin 1000 mg twice daily. He had a myocardial infarction 3 years ago and has stable angina. Estimated GFR is 52 mL/min/1.73m2. He does not smoke. He lives with his wife and works as an accountant.",
+  "criteria": "Inclusion criteria:\n- Adults aged 40 to 75 years\n- Type 2 diabetes with HbA1c between 7.5% and 10%\n- On a stable dose of metformin for at least 3 months\n\nExclusion criteria:\n- Type 1 diabetes\n- eGFR below 30 mL/min/1.73m2\n- Pregnancy or breastfeeding\n- Current insulin therapy",
+  "gold": null
+ }
+]

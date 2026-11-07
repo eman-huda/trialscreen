@@ -1,0 +1,16 @@
+{
+ "model": "Qwen/Qwen2.5-0.5B-Instruct",
+ "dtype": "float32",
+ "device": "cpu",
+ "prompt_tokens": 331,
+ "max_abs_logit_diff_vs_hf": {
+  "reference": 0.0001697540283203125,
+  "tiled": 0.00021457672119140625,
+  "torch_sdpa": 0.0
+ },
+ "greedy_tokens_equal": true,
+ "output": "```json\n{\n  \"evidence\": [0, 1, 2, 3, 4,",
+ "hf_nocache_s": 61.72511977699992,
+ "explicit_cache_tiled_s": 7.153236164999953,
+ "hf_cache_s": 6.691241931999912
+}
