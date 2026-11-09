@@ -118,9 +118,11 @@ class ExplicitQwen2Decoder:
         self.cache.crop(n)
 
     @torch.no_grad()
-    def forward(self, ids: torch.Tensor, use_cache: bool = True):
+    def forward(self, ids: torch.Tensor, use_cache: bool = True, logits_to_keep: int = 0):
         """ids [1, T] are the NEW tokens. Their absolute positions are
-        cache_len .. cache_len+T-1. Returns logits [1, T, vocab] (float32).
+        cache_len .. cache_len+T-1. Returns logits [1, T, vocab] (float32), or only the last
+        `logits_to_keep` positions when it is > 0 (greedy decoding needs just the last one; the
+        full [T, 151936] float32 logits tensor would cost ~0.6 MB per position).
         use_cache=False runs on a temporary empty cache (no reuse)."""
         if not use_cache:
             saved = self.cache
@@ -153,6 +155,8 @@ class ExplicitQwen2Decoder:
             x = self._rmsnorm(h, layer.post_attention_layernorm.weight)
             mlp = layer.mlp
             h = h + mlp.down_proj(F.silu(mlp.gate_proj(x)) * mlp.up_proj(x))
+        if logits_to_keep:
+            h = h[:, -logits_to_keep:]
         h = self._rmsnorm(h, self.m.norm.weight)
         logits = self.lm_head(h).float()
         self.cache.length = start + T
@@ -192,14 +196,14 @@ class HFCacheDecoder:
             self._len = n
 
     @torch.no_grad()
-    def forward(self, ids, use_cache: bool = True):
+    def forward(self, ids, use_cache: bool = True, logits_to_keep: int = 0):
         if not use_cache:
-            out = self.model(input_ids=ids, use_cache=False)
+            out = self.model(input_ids=ids, use_cache=False, logits_to_keep=logits_to_keep)
             return out.logits.float()
         T = ids.shape[1]
         pos = torch.arange(self._len, self._len + T, device=self.device)
         out = self.model(input_ids=ids, past_key_values=self.cache, use_cache=True,
-                         position_ids=pos[None], cache_position=pos)
+                         position_ids=pos[None], cache_position=pos, logits_to_keep=logits_to_keep)
         self._len += T
         return out.logits.float()
 
@@ -241,7 +245,7 @@ def greedy_cached(dec, prompt_ids: torch.Tensor, max_new_tokens: int, eos_ids=()
     dec.reset(); reset_peak(device)
     st = GenStats(prompt_len=prompt_ids.shape[1])
     sync(device); t0 = time.perf_counter()
-    logits = dec.forward(prompt_ids)                 # prefill: whole prompt, cache grows to P
+    logits = dec.forward(prompt_ids, logits_to_keep=1)   # prefill: whole prompt, cache grows to P
     nxt = int(logits[0, -1].argmax())
     sync(device); t1 = time.perf_counter()
     st.tokens.append(nxt)
@@ -267,7 +271,7 @@ def greedy_nocache(dec, prompt_ids: torch.Tensor, max_new_tokens: int, eos_ids=(
     seq = prompt_ids
     sync(device); t0 = time.perf_counter(); t1 = None
     while True:
-        logits = dec.forward(seq, use_cache=False)
+        logits = dec.forward(seq, use_cache=False, logits_to_keep=1)
         nxt = int(logits[0, -1].argmax())
         if t1 is None:
             sync(device); t1 = time.perf_counter()

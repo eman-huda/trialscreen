@@ -61,8 +61,8 @@ def speculative_greedy(target, draft, prompt_ids: torch.Tensor, max_new_tokens: 
     st = SpecStats()
     sync(device); t0 = time.perf_counter()
     # prefill both models on the prompt; the target's last logit gives the first token
-    logits = target.forward(prompt_ids); st.target_forwards += 1
-    draft.forward(prompt_ids[:, :-1]) if prompt_ids.shape[1] > 1 else None
+    logits = target.forward(prompt_ids, logits_to_keep=1); st.target_forwards += 1
+    draft.forward(prompt_ids[:, :-1], logits_to_keep=1) if prompt_ids.shape[1] > 1 else None
     st.draft_forwards += 1
     seq = prompt_ids[0].tolist()
     first = int(logits[0, -1].argmax())
@@ -74,7 +74,7 @@ def speculative_greedy(target, draft, prompt_ids: torch.Tensor, max_new_tokens: 
         k_eff = min(k, max_new_tokens - len(st.tokens))
         # ---- 1. draft k tokens
         pending = seq[draft.cache_len:]                      # tokens draft has not processed (ends with seq[-1])
-        dl = draft.forward(torch.tensor([pending], device=device)); st.draft_forwards += 1
+        dl = draft.forward(torch.tensor([pending], device=device), logits_to_keep=1); st.draft_forwards += 1
         drafts = [int(dl[0, -1].argmax())]
         while len(drafts) < k_eff and drafts[-1] not in eos_ids:
             dl = draft.forward(torch.tensor([[drafts[-1]]], device=device)); st.draft_forwards += 1

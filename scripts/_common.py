@@ -1,4 +1,6 @@
-import sys, json
+import os, sys, json
+# reduce CUDA allocator fragmentation when tensor sizes change every step (uncached decoding)
+os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
