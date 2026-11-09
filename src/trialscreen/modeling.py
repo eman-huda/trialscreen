@@ -16,8 +16,12 @@ def pick_device():
 
 
 def pick_dtype(device):
+    """bf16 only on GPUs with native support (compute capability >= 8, e.g. A100/L4).
+    On a T4 (7.5) torch.cuda.is_bf16_supported() can return True because bf16 is
+    *emulated*, which is several times slower than fp16, so we use fp16 there."""
     if device == "cuda":
-        return torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
+        major, _ = torch.cuda.get_device_capability()
+        return torch.bfloat16 if major >= 8 else torch.float16
     return torch.float32
 
 
