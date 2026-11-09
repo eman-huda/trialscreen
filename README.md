@@ -96,9 +96,8 @@ pip install -r requirements.txt && python -m pytest -q tests
 * **No silent truncation**: the longest example is 610 tokens; longer inputs raise an error instead.
 * **Trial-level outcome** in the app is an explicit rule over criterion predictions, not a labelled outcome.
 
-## 6. AI assistance
-Built with help from Claude (Anthropic) for code drafting, tests and report drafting. See the AI-use
-appendix in the report. The author reviewed, ran and is responsible for all code and results.
+## 6. Hugging Face Model Link
+https://huggingface.co/eman-huda/qwen2.5-1.5b-trialscreen-lora
 
 ## 7. Licences
 Code: MIT. Dataset: ncbi/TrialGPT-Criterion-Annotations (US public domain notice). Models: Qwen2.5 (Apache-2.0).
