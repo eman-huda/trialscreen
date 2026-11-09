@@ -1,0 +1,148 @@
+{
+ "env": {
+  "python": "3.13.16",
+  "torch": "2.11.0+cu130",
+  "transformers": "5.22.2",
+  "cuda": true,
+  "gpu": "Tesla T4",
+  "gpu_mem_gb": 14.6
+ },
+ "target": "Qwen/Qwen2.5-1.5B-Instruct",
+ "target_adapter": "/kaggle/working/trialscreen/checkpoints/qwen2.5-1.5b-trialscreen-lora/best_adapter",
+ "draft": "Qwen/Qwen2.5-0.5B-Instruct",
+ "draft_adapter": "none",
+ "vocab_equal": true,
+ "dtype": "torch.float16",
+ "workloads": {
+  "screening": {
+   "n_prompts": 20,
+   "greedy": {
+    "total_s": 9.580427507999957,
+    "new_tokens": 277,
+    "peak_mem_mb": 4079.42578125,
+    "tokens_per_s": 28.91311476118329
+   },
+   "speculative": {
+    "2": {
+     "equal": 20,
+     "mismatches": [],
+     "drafted": 213,
+     "accepted": 168,
+     "rounds": 108,
+     "total_s": 11.221827956000197,
+     "new_tokens": 277,
+     "peak_mem_mb": 4079.42578125,
+     "target_forwards": 128,
+     "draft_forwards": 233,
+     "acceptance_rate": 0.7887323943661971,
+     "tokens_per_round": 2.564814814814815,
+     "tokens_per_s": 24.684035532008927,
+     "speedup_vs_greedy": 0.8537314549433455,
+     "token_equal_rate": 1.0
+    },
+    "4": {
+     "equal": 20,
+     "mismatches": [],
+     "drafted": 294,
+     "accepted": 194,
+     "rounds": 83,
+     "total_s": 12.488911663996078,
+     "new_tokens": 277,
+     "peak_mem_mb": 4079.42578125,
+     "target_forwards": 103,
+     "draft_forwards": 314,
+     "acceptance_rate": 0.6598639455782312,
+     "tokens_per_round": 3.3373493975903616,
+     "tokens_per_s": 22.179674854979982,
+     "speedup_vs_greedy": 0.7671146826683941,
+     "token_equal_rate": 1.0
+    },
+    "6": {
+     "equal": 20,
+     "mismatches": [],
+     "drafted": 312,
+     "accepted": 210,
+     "rounds": 64,
+     "total_s": 12.542053050000504,
+     "new_tokens": 277,
+     "peak_mem_mb": 4079.42578125,
+     "target_forwards": 84,
+     "draft_forwards": 332,
+     "acceptance_rate": 0.6730769230769231,
+     "tokens_per_round": 4.328125,
+     "tokens_per_s": 22.085698321933734,
+     "speedup_vs_greedy": 0.7638643745012362,
+     "token_equal_rate": 1.0
+    }
+   },
+   "hf_assisted_reference_equal_first_prompt": true
+  },
+  "summary": {
+   "n_prompts": 2,
+   "greedy": {
+    "total_s": 8.67052252600024,
+    "new_tokens": 256,
+    "peak_mem_mb": 4092.28759765625,
+    "tokens_per_s": 29.525325519002394
+   },
+   "speculative": {
+    "2": {
+     "equal": 2,
+     "mismatches": [],
+     "drafted": 218,
+     "accepted": 146,
+     "rounds": 109,
+     "total_s": 10.110633794000023,
+     "new_tokens": 256,
+     "peak_mem_mb": 4092.28759765625,
+     "target_forwards": 111,
+     "draft_forwards": 220,
+     "acceptance_rate": 0.6697247706422018,
+     "tokens_per_round": 2.3486238532110093,
+     "tokens_per_s": 25.31987659882595,
+     "speedup_vs_greedy": 0.8575646890846358,
+     "token_equal_rate": 1.0
+    },
+    "4": {
+     "equal": 1,
+     "mismatches": [
+      {
+       "position": 52
+      }
+     ],
+     "drafted": 337,
+     "accepted": 169,
+     "rounds": 85,
+     "total_s": 12.693173349999597,
+     "new_tokens": 256,
+     "peak_mem_mb": 4092.28759765625,
+     "target_forwards": 87,
+     "draft_forwards": 339,
+     "acceptance_rate": 0.5014836795252225,
+     "tokens_per_round": 3.011764705882353,
+     "tokens_per_s": 20.168321422948825,
+     "speedup_vs_greedy": 0.6830854890987931,
+     "token_equal_rate": 0.5
+    },
+    "6": {
+     "equal": 2,
+     "mismatches": [],
+     "drafted": 411,
+     "accepted": 185,
+     "rounds": 70,
+     "total_s": 14.188820639999904,
+     "new_tokens": 256,
+     "peak_mem_mb": 4092.28759765625,
+     "target_forwards": 72,
+     "draft_forwards": 413,
+     "acceptance_rate": 0.45012165450121655,
+     "tokens_per_round": 3.657142857142857,
+     "tokens_per_s": 18.042373393480414,
+     "speedup_vs_greedy": 0.6110812692604661,
+     "token_equal_rate": 1.0
+    }
+   },
+   "hf_assisted_reference_equal_first_prompt": false
+  }
+ }
+}

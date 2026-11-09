@@ -1,0 +1,41 @@
+{
+ "config": {
+  "model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+  "seed": 42,
+  "max_len": 1536,
+  "lora_r": 16,
+  "lora_alpha": 32,
+  "lora_dropout": 0.05,
+  "target_modules": [
+   "q_proj",
+   "k_proj",
+   "v_proj",
+   "o_proj",
+   "gate_proj",
+   "up_proj",
+   "down_proj"
+  ],
+  "lr": 0.0002,
+  "weight_decay": 0.0,
+  "warmup_ratio": 0.05,
+  "epochs": 3,
+  "batch_size": 4,
+  "grad_accum": 4,
+  "max_grad_norm": 1.0,
+  "gradient_checkpointing": true,
+  "log_every": 5,
+  "select_metric": "val_macro_f1"
+ },
+ "token_stats": {
+  "train_max_tokens": 610,
+  "val_max_tokens": 444,
+  "truncated_examples": 0
+ },
+ "trainable_params": 18464768,
+ "total_params": 1562179072,
+ "best_epoch": 3,
+ "best_score": 0.443793395723245,
+ "train_minutes": 23.73788732290268,
+ "gpu": "Tesla T4",
+ "peak_mem_gb": 6.038183689117432
+}

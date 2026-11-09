@@ -1,0 +1,342 @@
+{
+ "classification": {
+  "overall": {
+   "n": 206,
+   "accuracy": 0.7427184466019418,
+   "macro_f1": 0.443793395723245,
+   "macro_f1_classes": [
+    "included",
+    "not included",
+    "excluded",
+    "not excluded",
+    "not enough information",
+    "not applicable"
+   ],
+   "per_class": {
+    "included": {
+     "precision": 0.8333333333333334,
+     "recall": 0.7142857142857143,
+     "f1": 0.7692307692307693,
+     "support": 35
+    },
+    "not included": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 3
+    },
+    "excluded": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 2
+    },
+    "not excluded": {
+     "precision": 0.765625,
+     "recall": 0.9702970297029703,
+     "f1": 0.8558951965065502,
+     "support": 101
+    },
+    "not enough information": {
+     "precision": 0.625,
+     "recall": 0.4716981132075472,
+     "f1": 0.5376344086021505,
+     "support": 53
+    },
+    "not applicable": {
+     "precision": 0.625,
+     "recall": 0.4166666666666667,
+     "f1": 0.5,
+     "support": 12
+    }
+   },
+   "invalid_outputs": 0,
+   "confusion_matrix": {
+    "labels": [
+     "included",
+     "not included",
+     "excluded",
+     "not excluded",
+     "not enough information",
+     "not applicable"
+    ],
+    "matrix": [
+     [
+      25,
+      0,
+      0,
+      0,
+      10,
+      0
+     ],
+     [
+      1,
+      0,
+      0,
+      0,
+      2,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0
+     ],
+     [
+      0,
+      0,
+      0,
+      98,
+      2,
+      1
+     ],
+     [
+      4,
+      0,
+      0,
+      22,
+      25,
+      2
+     ],
+     [
+      0,
+      0,
+      0,
+      6,
+      1,
+      5
+     ]
+    ]
+   }
+  },
+  "inclusion": {
+   "n": 66,
+   "accuracy": 0.7272727272727273,
+   "macro_f1": 0.37484737484737485,
+   "macro_f1_classes": [
+    "included",
+    "not included",
+    "not enough information",
+    "not applicable"
+   ],
+   "per_class": {
+    "included": {
+     "precision": 0.8333333333333334,
+     "recall": 0.7142857142857143,
+     "f1": 0.7692307692307693,
+     "support": 35
+    },
+    "not included": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 3
+    },
+    "not enough information": {
+     "precision": 0.6388888888888888,
+     "recall": 0.8518518518518519,
+     "f1": 0.7301587301587301,
+     "support": 27
+    },
+    "not applicable": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 1
+    }
+   },
+   "invalid_outputs": 0,
+   "confusion_matrix": {
+    "labels": [
+     "included",
+     "not included",
+     "not enough information",
+     "not applicable"
+    ],
+    "matrix": [
+     [
+      25,
+      0,
+      10,
+      0
+     ],
+     [
+      1,
+      0,
+      2,
+      0
+     ],
+     [
+      4,
+      0,
+      23,
+      0
+     ],
+     [
+      0,
+      0,
+      1,
+      0
+     ]
+    ]
+   }
+  },
+  "exclusion": {
+   "n": 140,
+   "accuracy": 0.75,
+   "macro_f1": 0.37888607982839195,
+   "macro_f1_classes": [
+    "excluded",
+    "not excluded",
+    "not enough information",
+    "not applicable"
+   ],
+   "per_class": {
+    "excluded": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "support": 2
+    },
+    "not excluded": {
+     "precision": 0.765625,
+     "recall": 0.9702970297029703,
+     "f1": 0.8558951965065502,
+     "support": 101
+    },
+    "not enough information": {
+     "precision": 0.5,
+     "recall": 0.07692307692307693,
+     "f1": 0.13333333333333333,
+     "support": 26
+    },
+    "not applicable": {
+     "precision": 0.625,
+     "recall": 0.45454545454545453,
+     "f1": 0.5263157894736842,
+     "support": 11
+    }
+   },
+   "invalid_outputs": 0,
+   "confusion_matrix": {
+    "labels": [
+     "excluded",
+     "not excluded",
+     "not enough information",
+     "not applicable"
+    ],
+    "matrix": [
+     [
+      0,
+      2,
+      0,
+      0
+     ],
+     [
+      0,
+      98,
+      2,
+      1
+     ],
+     [
+      0,
+      22,
+      2,
+      2
+     ],
+     [
+      0,
+      6,
+      0,
+      5
+     ]
+    ]
+   }
+  }
+ },
+ "evidence": {
+  "overall": {
+   "micro": {
+    "precision": 0.5655737704918032,
+    "recall": 0.6,
+    "f1": 0.5822784810126581,
+    "tp": 69,
+    "fp": 53,
+    "fn": 46
+   },
+   "macro_nonempty_gold": {
+    "precision": 0.6040740740740741,
+    "recall": 0.6435185185185185,
+    "f1": 0.6076719576719577,
+    "n_records": 90
+   },
+   "empty_gold": {
+    "n_records": 116,
+    "model_also_empty": 102,
+    "agreement_rate": 0.8793103448275862
+   }
+  },
+  "inclusion": {
+   "micro": {
+    "precision": 0.6153846153846154,
+    "recall": 0.7164179104477612,
+    "f1": 0.6620689655172414,
+    "tp": 48,
+    "fp": 30,
+    "fn": 19
+   },
+   "macro_nonempty_gold": {
+    "precision": 0.7206666666666667,
+    "recall": 0.7883333333333333,
+    "f1": 0.7304761904761904,
+    "n_records": 50
+   },
+   "empty_gold": {
+    "n_records": 16,
+    "model_also_empty": 11,
+    "agreement_rate": 0.6875
+   }
+  },
+  "exclusion": {
+   "micro": {
+    "precision": 0.4772727272727273,
+    "recall": 0.4375,
+    "f1": 0.45652173913043476,
+    "tp": 21,
+    "fp": 23,
+    "fn": 27
+   },
+   "macro_nonempty_gold": {
+    "precision": 0.4583333333333333,
+    "recall": 0.4625,
+    "f1": 0.4541666666666666,
+    "n_records": 40
+   },
+   "empty_gold": {
+    "n_records": 100,
+    "model_also_empty": 91,
+    "agreement_rate": 0.91
+   }
+  }
+ },
+ "valid_json_rate": 1.0,
+ "settings": {
+  "decoding": "greedy (argmax), HF forward + explicit DynamicCache loop",
+  "max_new_tokens": 48,
+  "prompt": "trialscreen.data.build_messages + Qwen chat template",
+  "env": {
+   "python": "3.13.16",
+   "torch": "2.11.0+cu130",
+   "transformers": "5.22.2",
+   "cuda": true,
+   "gpu": "Tesla T4",
+   "gpu_mem_gb": 14.6
+  },
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "adapter": "/kaggle/working/trialscreen/checkpoints/qwen2.5-1.5b-trialscreen-lora/best_adapter",
+  "minutes": 2.0213489651679994
+ }
+}

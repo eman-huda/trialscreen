@@ -1,0 +1,13 @@
+\begin{table}[t]\centering\caption{Greedy speculative decoding (target Qwen2.5-1.5B-Instruct, draft Qwen2.5-0.5B-Instruct). Equal = share of prompts whose tokens match greedy target decoding.}\label{tab:spec}
+\resizebox{\columnwidth}{!}{\begin{tabular}{llrrrrrr}\toprule Workload & Method & Equal & Accept & Tok/round & Tok/s & Speedup & Peak MB\\\midrule
+screening & greedy & -- & -- & 1.00 & 28.9 & 1.00 & 4079\\
+screening & spec k=2 & 1.00 & 0.79 & 2.56 & 24.7 & 0.85 & 4079\\
+screening & spec k=4 & 1.00 & 0.66 & 3.34 & 22.2 & 0.77 & 4079\\
+screening & spec k=6 & 1.00 & 0.67 & 4.33 & 22.1 & 0.76 & 4079\\
+\midrule
+summary & greedy & -- & -- & 1.00 & 29.5 & 1.00 & 4092\\
+summary & spec k=2 & 1.00 & 0.67 & 2.35 & 25.3 & 0.86 & 4092\\
+summary & spec k=4 & 0.50 & 0.50 & 3.01 & 20.2 & 0.68 & 4092\\
+summary & spec k=6 & 1.00 & 0.45 & 3.66 & 18.0 & 0.61 & 4092\\
+\midrule
+\bottomrule\end{tabular}}\end{table}

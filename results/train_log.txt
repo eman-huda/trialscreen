@@ -1,0 +1,31 @@
+{"python": "3.13.16", "torch": "2.11.0+cu130", "transformers": "5.22.2", "cuda": true, "gpu": "Tesla T4", "gpu_mem_gb": 14.6}
+trainable params 18,464,768 / 1,562,179,072 (1.182%)
+token stats {'train_max_tokens': 610, 'val_max_tokens': 444, 'truncated_examples': 0}
+epoch 1 step 5/114 loss 0.2515 lr 2.00e-04 elapsed 27s
+epoch 1 step 10/114 loss 0.1951 lr 1.99e-04 elapsed 53s
+epoch 1 step 15/114 loss 0.1547 lr 1.96e-04 elapsed 80s
+epoch 1 step 20/114 loss 0.1398 lr 1.91e-04 elapsed 108s
+epoch 1 step 25/114 loss 0.0975 lr 1.84e-04 elapsed 136s
+epoch 1 step 30/114 loss 0.0736 lr 1.75e-04 elapsed 162s
+epoch 1 step 35/114 loss 0.1050 lr 1.65e-04 elapsed 190s
+== epoch 1 {'epoch': 1, 'step': 38, 'val_loss': 0.15514430725111958, 'val_accuracy': 0.7378640776699029, 'val_macro_f1': 0.3611307100606074, 'val_evidence_micro_f1': 0.3968668407310705, 'val_valid_json_rate': 1.0}
+saved best adapter (epoch 1, val_macro_f1=0.3611)
+epoch 2 step 40/114 loss 0.1011 lr 1.53e-04 elapsed 499s
+epoch 2 step 45/114 loss 0.0920 lr 1.41e-04 elapsed 528s
+epoch 2 step 50/114 loss 0.0486 lr 1.27e-04 elapsed 555s
+epoch 2 step 55/114 loss 0.0785 lr 1.13e-04 elapsed 582s
+epoch 2 step 60/114 loss 0.0659 lr 9.86e-05 elapsed 609s
+epoch 2 step 65/114 loss 0.1112 lr 8.42e-05 elapsed 637s
+epoch 2 step 70/114 loss 0.0746 lr 7.02e-05 elapsed 665s
+epoch 2 step 75/114 loss 0.0648 lr 5.68e-05 elapsed 691s
+== epoch 2 {'epoch': 2, 'step': 76, 'val_loss': 0.1418227395039621, 'val_accuracy': 0.7184466019417476, 'val_macro_f1': 0.35021929824561404, 'val_evidence_micro_f1': 0.5172413793103448, 'val_valid_json_rate': 1.0}
+epoch 3 step 80/114 loss 0.0575 lr 4.43e-05 elapsed 980s
+epoch 3 step 85/114 loss 0.0582 lr 3.29e-05 elapsed 1007s
+epoch 3 step 90/114 loss 0.0297 lr 2.30e-05 elapsed 1033s
+epoch 3 step 95/114 loss 0.0656 lr 1.46e-05 elapsed 1059s
+epoch 3 step 100/114 loss 0.0640 lr 8.03e-06 elapsed 1088s
+epoch 3 step 105/114 loss 0.0350 lr 3.35e-06 elapsed 1115s
+epoch 3 step 110/114 loss 0.1368 lr 6.64e-07 elapsed 1144s
+== epoch 3 {'epoch': 3, 'step': 114, 'val_loss': 0.13840951449141506, 'val_accuracy': 0.7427184466019418, 'val_macro_f1': 0.443793395723245, 'val_evidence_micro_f1': 0.5822784810126581, 'val_valid_json_rate': 1.0}
+saved best adapter (epoch 3, val_macro_f1=0.4438)
+best adapter: /kaggle/working/trialscreen/checkpoints/qwen2.5-1.5b-trialscreen-lora/best_adapter

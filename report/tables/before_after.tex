@@ -1,0 +1,8 @@
+\begin{table}[t]\centering\caption{Same model before and after LoRA fine-tuning (greedy decoding, identical prompts). Macro-F1 averages classes present in the gold subset.}\label{tab:beforeafter}
+\resizebox{\columnwidth}{!}{\begin{tabular}{llrrrrrrr}\toprule
+Split & Model & Acc & Macro-F1 & Incl.~F1 & Excl.~F1 & Ev.~micro-F1 & Ev.~macro-F1 & Valid JSON\\\midrule
+validation & base & 0.209 & 0.175 & 0.300 & 0.055 & 0.148 & 0.323 & 1.000\\
+validation & finetuned & 0.743 & 0.444 & 0.375 & 0.379 & 0.582 & 0.608 & 1.000\\
+test & base & 0.165 & 0.170 & 0.233 & 0.077 & 0.158 & 0.371 & 1.000\\
+test & finetuned & 0.743 & 0.534 & 0.431 & 0.422 & 0.571 & 0.598 & 1.000\\
+\bottomrule\end{tabular}}\end{table}
