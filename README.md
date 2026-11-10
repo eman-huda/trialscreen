@@ -130,6 +130,9 @@ Dataset and task from TrialGPT (Jin et al., *Nature Communications*, 2024). Clau
 programming and writing assistant, as declared in the report's appendix; all experiments were run and all
 results verified by the author.
 
+## 6. Hugging Face Model Link
+https://huggingface.co/eman-huda/qwen2.5-1.5b-trialscreen-lora
+
 ## Licence
 
 Code: MIT. Dataset: see its Hugging Face page. Qwen2.5 models: Apache-2.0.
