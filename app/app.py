@@ -102,10 +102,10 @@ def _highlight(sents, cited):
     out = []
     for i, s in sents:
         if i in cited:
-            out.append(f"<li value='{i}' style='background:#fff1b8;border-radius:4px'><b>[{i}]</b> {html.escape(s)}</li>")
+            out.append(f"<li value='{i}' style='background:#fce7f3;border-left:4px solid #f472b6;border-radius:6px'><b>[{i}]</b> {html.escape(s)}</li>")
         else:
             out.append(f"<li value='{i}'><b>[{i}]</b> {html.escape(s)}</li>")
-    return "<ol start='0' style='padding-left:1.4em'>" + "".join(out) + "</ol>"
+    return "<ol start='0' style='list-style:none;padding-left:0.4em'>" + "".join(out) + "</ol>"
 
 
 def screen(note, criteria_text, trial_name, mode_label, attn_backend, k, progress=gr.Progress()):
@@ -244,12 +244,55 @@ def saved_logs():
 
 
 # ------------------------------------------------------------------ UI
-CSS = """.notice{background:#fff4e5;border:2px solid #8a5a00;border-radius:12px;padding:10px 14px;font-weight:600}"""
+# ---- pastel theme: pink + lilac + light blue (light mode only) ---------------------
+THEME = gr.themes.Soft(
+    primary_hue=gr.themes.colors.pink, secondary_hue=gr.themes.colors.violet,
+    neutral_hue=gr.themes.colors.slate, radius_size=gr.themes.sizes.radius_lg,
+    font=[gr.themes.GoogleFont("Nunito"), "ui-sans-serif", "system-ui", "sans-serif"],
+).set(
+    body_background_fill="linear-gradient(135deg, #fdf2f8 0%, #f5f3ff 50%, #eff6ff 100%)",
+    body_text_color="#2e1065",
+    block_background_fill="rgba(255,255,255,0.88)",
+    block_border_color="#ead7f7", block_border_width="1px",
+    block_label_background_fill="#fce7f3", block_label_text_color="#831843",
+    block_title_text_color="#5b21b6",
+    input_background_fill="#ffffff", input_border_color="#e9d5ff",
+    input_border_color_focus="#f472b6",
+    button_primary_background_fill="linear-gradient(90deg, #f472b6, #a78bfa)",
+    button_primary_background_fill_hover="linear-gradient(90deg, #ec4899, #8b5cf6)",
+    button_primary_text_color="#ffffff",
+    button_secondary_background_fill="#e0f2fe", button_secondary_background_fill_hover="#bae6fd",
+    button_secondary_text_color="#075985", button_secondary_border_color="#bae6fd",
+    slider_color="#f472b6", checkbox_label_background_fill_selected="#fce7f3",
+    table_even_background_fill="#fdf4ff", table_odd_background_fill="#ffffff",
+    shadow_drop="0 4px 18px rgba(167,139,250,0.15)",
+)
+
+CSS = """
+.gradio-container {max-width: 1280px !important; margin: auto;}
+#hero {text-align:center; padding: 18px 12px 6px;}
+#hero h1 {font-size: 2.4rem; margin: 0; background: linear-gradient(90deg,#db2777,#7c3aed,#2563eb);
+  -webkit-background-clip: text; background-clip: text; color: transparent; font-weight: 800;}
+#hero p {color:#6b21a8; margin: 6px 0 0; font-size: 1.05rem;}
+.notice {background:#fff1f7; border:2px solid #f9a8d4; color:#831843; border-radius:14px;
+  padding:10px 16px; font-weight:600; text-align:center;}
+.status {background:#eff6ff; border:1px solid #bfdbfe; border-radius:12px; padding:8px 14px; color:#1e3a8a;}
+.tab-nav button, button[role="tab"] {font-weight:700 !important; color:#6d28d9 !important;}
+button[role="tab"][aria-selected="true"] {color:#db2777 !important; border-color:#f472b6 !important;}
+details {background:#faf5ff; border:1px solid #e9d5ff; border-radius:10px; padding:6px 10px; margin:6px 0;}
+details summary {cursor:pointer; color:#5b21b6;}
+ol li {padding:2px 4px; border-radius:6px;}
+footer {display:none !important;}
+"""
+# always light mode, even when the visitor's browser prefers dark
+FORCE_LIGHT = """() => { document.body.classList.remove('dark');
+  const u = new URL(window.location); if (u.searchParams.get('__theme') !== 'light') {
+    u.searchParams.set('__theme', 'light'); window.location.replace(u); } }"""
 
 with gr.Blocks(title="TrialScreen: clinical trial eligibility screening (educational)") as demo:
-    gr.Markdown("# TrialScreen\nCriterion-level clinical trial eligibility screening with evidence citations.")
+    gr.HTML("<div id='hero'><h1>🩺 TrialScreen</h1><p>Criterion-level clinical trial eligibility screening with evidence citations</p></div>")
     gr.HTML(f"<div class='notice'>⚠ {DISCLAIMER}</div>")
-    status = gr.Markdown(status_md())
+    status = gr.Markdown(status_md(), elem_classes="status")
     with gr.Tab("Screen a patient"):
         with gr.Row():
             with gr.Column(scale=1):
@@ -308,4 +351,5 @@ if __name__ == "__main__":
     _load()
     demo.queue(default_concurrency_limit=1).launch(server_name=os.environ.get("TS_HOST", "0.0.0.0"),
                                                    server_port=int(os.environ.get("TS_PORT", 7860)),
-                                                   share=os.environ.get("TS_SHARE") == "1", css=CSS)
+                                                   share=os.environ.get("TS_SHARE") == "1", css=CSS,
+                                                   theme=THEME, js=FORCE_LIGHT)
