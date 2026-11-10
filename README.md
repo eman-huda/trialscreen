@@ -111,6 +111,10 @@ The test split can only be evaluated with `--final`; no choice was tuned on it.
 !pip install -q "transformers==5.22.2" "peft==0.21.2" "accelerate==1.15.0" scikit-learn gradio
 !pip uninstall -y -q torchao
 !TS_ADAPTER=eman-huda/qwen2.5-1.5b-trialscreen-lora TS_SHARE=1 python -u app/app.py
+
+## Loom Video Link
+https://www.loom.com/share/4141c847d19d4a2999cde34365d3ce12
+
 ## Design decisions
 
 * **Data integrity.** Patient IDs are sorted and shuffled with `numpy.random.default_rng(42)`; 37 patients
