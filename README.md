@@ -104,6 +104,13 @@ The test split can only be evaluated with `--final`; no choice was tuned on it.
 
 **Unit tests (CPU, about 10 seconds):** `pip install -r requirements.txt && python -m pytest -q tests`
 
+## Commands to run applications
+
+!git clone -q --depth 1 https://github.com/eman-huda/trialscreen.git /content/trialscreen
+%cd /content/trialscreen
+!pip install -q "transformers==5.22.2" "peft==0.21.2" "accelerate==1.15.0" scikit-learn gradio
+!pip uninstall -y -q torchao
+!TS_ADAPTER=eman-huda/qwen2.5-1.5b-trialscreen-lora TS_SHARE=1 python -u app/app.py
 ## Design decisions
 
 * **Data integrity.** Patient IDs are sorted and shuffled with `numpy.random.default_rng(42)`; 37 patients
